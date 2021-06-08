@@ -1,0 +1,75 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 85%;
+    margin: 20% auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item{
+    /* height: 400px; */
+    height: fit-content;
+    width: 70%;
+    margin: auto;
+    padding: 15%;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+.car-name{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    font-family: "Big Shoulders Display";
+    padding: 2% 0;
+    color: hsl(0, 0%, 95%);
+}
+.content{
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+.button{
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 55px;
+}
+.button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 63%;
+        margin: 10% auto;
+    }
+    .item{
+        padding: 5%;
+    }
+    .content{
+        margin-bottom: 40%;
+    }
+}
